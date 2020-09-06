@@ -1,0 +1,32 @@
+.features {
+	display: flex;
+	flex-wrap: wrap;
+
+	&-box {
+		position: relative;
+	}
+
+	.features-item:not(:last-child) {
+		margin-right: 30px;
+	}
+
+	&-title {
+		padding-top: 27px;
+		bottom: 0;
+		position: absolute;
+		width: 370px;
+		height: 70px;
+		margin-top: 0;
+		margin-bottom: 0;
+		background: $feature-title-background;
+		font-family: Roboto, sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.14;
+		text-align: center;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: $white;
+	}
+}
