@@ -1,15 +1,15 @@
+.network-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .network-icon {
 	fill: $white;
 
 	&-member {
 		fill: $border-color;
 	}
-}
-
-.network-list {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .network-item-link {
@@ -29,26 +29,23 @@
 		background-color: $accent-color;
 		transition-duration: 250ms;
 		transition-timing-function: $timing-function;
-	}
 
-	&:hover .network-icon-member {
-		transition-duration: 250ms;
-		transition-timing-function: $timing-function;
-		color: $accent-color;
-		fill: $white;
-	}
+		.network-icon-member {
+			transition-duration: 250ms;
+			transition-timing-function: $timing-function;
+			color: $accent-color;
+			fill: $white;
+		}
 
-	&:focus .network-icon-member {
-		transition-duration: 250ms;
-		transition-timing-function: $timing-function;
-		color: $accent-color;
-		fill: $white;
-	}
-
-	&:not(:last-child) {
-		margin-right: 10px;
+		.network-icon-member {
+			transition-duration: 250ms;
+			transition-timing-function: $timing-function;
+			color: $accent-color;
+			fill: $white;
+		}
 	}
 }
-.footer .networks {
-	display: flex;
+
+.network-item:not(:last-child) {
+	margin-right: 10px;
 }

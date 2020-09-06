@@ -2,23 +2,6 @@
 	padding-top: 94px;
 	padding-bottom: 0;
 
-	&-list .list-item:not(:last-child) {
-		margin-right: 30px;
-	}
-	&-list {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	&-list p {
-		margin-top: 0;
-		margin-bottom: 0;
-		font-family: Roboto, sans-serif;
-		font-size: 14px;
-		line-height: 1.71;
-		letter-spacing: 0.03em;
-		color: $primary-text-color;
-	}
-
 	.title {
 		margin-top: 0;
 		margin-bottom: 10px;
@@ -31,9 +14,27 @@
 		color: $title-text-color;
 	}
 }
+.advantages-list {
+	display: flex;
+	flex-wrap: wrap;
 
-.list-item {
+	& p {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-family: Roboto, sans-serif;
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+		color: $primary-text-color;
+	}
+}
+
+.advantages-list-item {
 	width: 270px;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
 
 	&:before {
 		margin-bottom: 30px;
@@ -46,20 +47,20 @@
 		border-radius: 4px;
 		background-color: $secondary-background-color;
 	}
+}
 
-	.antenna::before {
-		background-image: url(../images/antenna.svg);
-	}
+.antenna::before {
+	background-image: url(../images/antenna.svg);
+}
 
-	.clock::before {
-		background-image: url(../images/clock.svg);
-	}
+.clock::before {
+	background-image: url(../images/clock.svg);
+}
 
-	.diagram::before {
-		background-image: url(../images/diagram.svg);
-	}
+.diagram::before {
+	background-image: url(../images/diagram.svg);
+}
 
-	.astronaut::before {
-		background-image: url(../images/astronaut.svg);
-	}
+.astronaut::before {
+	background-image: url(../images/astronaut.svg);
 }

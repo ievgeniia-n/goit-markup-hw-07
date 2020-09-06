@@ -21,17 +21,18 @@
 		transition-duration: 250ms;
 		transition-timing-function: $timing-function;
 		border-color: $accent-color;
-	}
-	&:hover .img-clients-icon,
-	&:focus .img-clients-icon {
-		transition-duration: 250ms;
-		transition-timing-function: $timing-function;
-		fill: $accent-color;
+
+		.img-clients-icon,
+		.img-clients-icon {
+			transition-duration: 250ms;
+			transition-timing-function: $timing-function;
+			fill: $accent-color;
+		}
 	}
 }
 
 .img-clients-icon {
-	fill: $border-color;
+	fill: #afb1b8;
 	transition-duration: 250ms;
 	transition-timing-function: $timing-function;
 }

@@ -1,29 +1,3 @@
-footer {
-	background-color: $footer-background-color;
-
-	.text-footer {
-		margin-top: 0;
-		margin-bottom: 20px;
-		font-family: Roboto, sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 14px;
-		line-height: 1.14;
-		letter-spacing: 0.03em;
-		text-transform: uppercase;
-		color: $white;
-	}
-
-	.order-link {
-		position: relative;
-		min-width: 200px;
-	}
-
-	.logo {
-		margin-bottom: 20px;
-	}
-}
-
 .form-field-footer input {
 	padding-left: 16px;
 	width: 358px;
@@ -33,15 +7,25 @@ footer {
 	border-radius: 4px;
 }
 
-.icon-send {
-	position: absolute;
-	top: 25%;
-	left: 148px;
-	display: block;
-	width: 24px;
-	height: 24px;
-	margin-left: 10px;
-	fill: $white;
+.footer .order-link {
+	min-width: 200px;
+}
+
+.text-footer {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.networks {
+	display: flex;
 }
 
 .address {
@@ -53,11 +37,18 @@ footer {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
-	color: $white;
-
-	.link {
-		color: $white-1;
-	}
+	color: #ffffff;
+}
+address .link {
+	margin-bottom: 9px;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	color: $white-1;
 }
 .mail-link {
 	margin-bottom: 9px;
