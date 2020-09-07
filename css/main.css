@@ -390,8 +390,8 @@ ul {
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(/images/Header.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(/images/Header.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -474,19 +474,19 @@ ul {
 }
 
 .antenna::before {
-  background-image: url(../images/antenna.svg);
+  background-image: url(/images/antenna.svg);
 }
 
 .clock::before {
-  background-image: url(../images/clock.svg);
+  background-image: url(/images/clock.svg);
 }
 
 .diagram::before {
-  background-image: url(../images/diagram.svg);
+  background-image: url(/images/diagram.svg);
 }
 
 .astronaut::before {
-  background-image: url(../images/astronaut.svg);
+  background-image: url(/images/astronaut.svg);
 }
 
 .features {
@@ -588,19 +588,19 @@ ul {
 }
 
 .designer::before {
-  background-image: url(../images/product-designer.jpg);
+  background-image: url(/images/product-designer.jpg);
 }
 
 .developer::before {
-  background-image: url(../images/frontend-developer.jpg);
+  background-image: url(/images/frontend-developer.jpg);
 }
 
 .marketing::before {
-  background-image: url(../images/marketing.jpg);
+  background-image: url(/images/marketing.jpg);
 }
 
 .uidesigner::before {
-  background-image: url(../images/ui-designer.jpg);
+  background-image: url(/images/ui-designer.jpg);
 }
 
 .clients-list {
