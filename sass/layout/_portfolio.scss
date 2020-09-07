@@ -1,3 +1,18 @@
+.section-description {
+	margin-top: 0;
+	margin-bottom: 20px;
+	margin-left: 24px;
+	margin-right: 24px;
+	font-size: 16px;
+	line-height: 1.86;
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
+}
+
+.portfolio {
+	flex-wrap: wrap;
+}
+
 .portfolio-title {
 	margin-top: 0;
 	margin-bottom: 4px;
@@ -9,37 +24,6 @@
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: $title-text-color;
-}
-
-.portfolio {
-	flex-wrap: wrap;
-}
-
-.examples .example-item {
-	box-sizing: border-box;
-	display: inline-block;
-	margin-right: 30px;
-	margin-bottom: 30px;
-	width: 370px;
-	border: 1px solid #eeeeee;
-}
-
-.portfolio-overlay {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	display: inline-block;
-	background: rgba(33, 150, 243, 0.9);
-
-	transform: translateY(100%);
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.example-item:hover .portfolio-overlay {
-	transform: translateY(0);
-	opacity: 1;
 }
 
 .portfolio-card {
@@ -62,6 +46,34 @@
 	line-height: 1.55;
 	letter-spacing: 0.03em;
 	color: $white;
+}
+
+
+.portfolio-overlay {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: inline-block;
+	background: rgba(33, 150, 243, 0.9);
+
+	transform: translateY(100%);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.example-item:hover .portfolio-overlay {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.examples .example-item {
+	box-sizing: border-box;
+	display: inline-block;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	width: 370px;
+	border: 1px solid #eeeeee;
 }
 
 .examples .example-item:nth-child(3n) {
