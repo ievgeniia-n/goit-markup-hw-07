@@ -17,21 +17,6 @@
   width: 1230px;
 }
 
-.container-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #2f303a;
-}
-
 body {
   font-family: Roboto, sans-serif;
   background-color: #ffffff;
@@ -81,6 +66,11 @@ ul {
   z-index: 999;
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -95,30 +85,9 @@ ul {
   border-radius: 4px;
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.button-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-size: content;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  fill: #000000;
+.form {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .form-title {
@@ -133,6 +102,19 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+.form-icon {
+  bottom: 21px;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 14px;
+  display: inline-block;
+}
+
+.form-field {
+  position: relative;
 }
 
 .form-field input {
@@ -154,23 +136,6 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-}
-
-.form-field:focus-within > .form-icon {
-  fill: #2196f3;
-}
-
-.form-field:focus-within input {
-  border-color: #2196f3;
-}
-
-.form-field:focus-within textarea {
-  border-color: #2196f3;
-}
-
-.form {
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .form-field textarea {
@@ -200,6 +165,18 @@ ul {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
+}
+
+.form-field:focus-within > .form-icon {
+  fill: #2196f3;
+}
+
+.form-field:focus-within input {
+  border-color: #2196f3;
+}
+
+.form-field:focus-within textarea {
+  border-color: #2196f3;
 }
 
 .form-field textarea::-webkit-input-placeholder {
@@ -242,6 +219,13 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
 .checkbox-label {
   margin-bottom: 20px;
   display: -webkit-box;
@@ -262,13 +246,6 @@ ul {
   color: #757575;
 }
 
-.checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-}
-
 .checkbox-icon {
   content: "";
   display: inline-block;
@@ -281,9 +258,9 @@ ul {
 }
 
 .checkbox:checked + .checkbox-icon {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  background-image: url(/images/icon/check.svg);
+  background-color: #2196f3;
+  border-color: #2196f3;
+  background-image: url(/images/icon-check.svg);
   background-origin: border-box;
 }
 
@@ -291,17 +268,25 @@ ul {
   color: #2196f3;
 }
 
-.form-icon {
-  bottom: 21px;
+.button-close {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  left: 14px;
-  display: inline-block;
-}
-
-.form-field {
-  position: relative;
+  top: 8px;
+  right: 8px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: content;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: #000000;
 }
 
 .network-list {
@@ -623,7 +608,7 @@ ul {
 
 .container-main {
   max-width: 1600px;
-  min-height: 600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(/images/Header.jpg);
@@ -631,7 +616,7 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: grey;
+  background-color: #c4c4c4;
 }
 
 .page {
@@ -897,6 +882,21 @@ ul {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2f303a;
 }
 
 .form-field-footer input {
